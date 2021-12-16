@@ -41,5 +41,3 @@ const get_dye_json = () => {
     }
   })
 };
-
-module.exports = get_dye_json;

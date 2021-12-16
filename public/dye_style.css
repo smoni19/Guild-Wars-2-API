@@ -1,0 +1,57 @@
+body
+{
+  font-family: 'Readex Pro', sans-serif;
+  text-align: center;
+  background-color: #333333;
+}
+
+div.dyes
+{
+  margin: auto;
+}
+
+.dyes
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+p
+{
+  flex: 1;
+  flex-basis: 5%;
+}
+
+div
+{
+  position: relative;
+  left: 0px;
+  top: 0px;
+}
+
+p
+{
+  text-align: center;
+  margin: 0px;
+  font-size: 15px;
+  height: 70px;
+  padding-left: 6px;
+  padding-top: 3px;
+  /* text-shadow: 0 0 3px #FFFFFF, 0 0 3px #FFFFFF, 0 0 3px #FFFFFF; */
+  color: #00000000;
+}
+
+p:hover
+{
+  color: #000000;
+  text-shadow: 0 0 3px #FFFFFF, 0 0 3px #FFFFFF, 0 0 3px #FFFFFF;
+  cursor: pointer;
+}
+
+#all_dyes
+{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
