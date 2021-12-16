@@ -1,58 +1,150 @@
 body
 {
+  background-color: #DDDDDD;
   font-family: 'Readex Pro', sans-serif;
   text-align: center;
-  background-color: #333333;
-  color: #00eeff;
 }
 
-div.dyes
-{
-  margin: auto;
+#character_info  {
+  width: 33%;
+  min-width: 40%;
+  display: inline-block;
 }
 
-.dyes
-{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+.characterBox {
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 1px 1px 3px #00000088;
+  height: 100px;
 }
 
-p
-{
-  flex: 1;
-  flex-basis: 5%;
+.characterName {
+  text-shadow: 1px 1px 1px #FFFFFFAA;
+  float: left;
+  padding-left: 20px;
 }
 
-div
-{
-  position: relative;
-  left: 0px;
-  top: 0px;
+.characterRace {
+  text-shadow: 1px 1px 1px #FFFFFFAA;
+  float: right;
+  padding-right: 5px;
 }
 
-p
-{
-  text-align: center;
-  margin: 0px;
-  font-size: 15px;
-  height: 70px;
-  padding-left: 6px;
-  padding-top: 3px;
-  /* text-shadow: 0 0 3px #FFFFFF, 0 0 3px #FFFFFF, 0 0 3px #FFFFFF; */
-  color: #00eeff;
+.characterProf {
+  text-shadow: 1px 1px 1px #FFFFFFAA;
+  float: right;
+  padding-right: 20px;
 }
 
-/* p:hover
-{
-  color: #000000;
-  text-shadow: 0 0 3px #FFFFFF, 0 0 3px #FFFFFF, 0 0 3px #FFFFFF;
-  cursor: pointer;
-} */
-
-#all_dyes
-{
+.characterProfPic {
   position: absolute;
-  top: 0px;
-  left: 0px;
+  left: 48%;
+  width: 3em;
+}
+
+#Elementalist .characterProfPic {
+  /* filter: hue-rotate(100deg); */
+  filter: hue-rotate(300deg);
+}
+
+#Engineer .characterProfPic {
+  /* filter: hue-rotate(100deg); */
+}
+
+#Guardian .characterProfPic {
+  filter: hue-rotate(160deg);
+}
+
+#Guardian .characterProfPic {
+  filter: hue-rotate(160deg);
+}
+
+#Necromancer .characterProfPic {
+  filter: hue-rotate(100deg);
+}
+
+#Mesmer .characterProfPic {
+  filter: brightness(90%) hue-rotate(230deg);
+}
+
+#Ranger .characterProfPic {
+  filter: hue-rotate(50deg);
+}
+
+#Revenant .characterProfPic {
+  filter: hue-rotate(320deg);
+}
+
+#Thief .characterProfPic {
+  filter: hue-rotate(290deg);
+}
+
+#Warrior .characterProfPic {
+  filter: hue-rotate(340deg);
+}
+
+#Elementalist {
+  background: linear-gradient(0deg, rgba(246,210,209,1) 0%, rgba(254,238,237,1) 100%);
+  color: #DC423E;
+  border: 1px solid #F68A87;
+}
+
+#Engineer {
+  background: linear-gradient(0deg, rgba(232,200,159,1) 0%, rgba(248,235,218,1) 100%);
+  color: #87581D;
+  border: 1px solid #D09C59;
+}
+
+#Guardian {
+  background: linear-gradient(0deg, rgba(207,238,253,1) 0%, rgba(234,246,249,1) 100%);
+  color: #186885;
+  border: 1px solid #72C1D9;
+}
+
+#Necromancer {
+  background: linear-gradient(0deg, rgba(191,230,208,1) 0%, rgba(229,242,234,1) 100%);
+  color: #2C9D5D;
+  border: 1px solid #52A76F;
+}
+
+#Mesmer {
+  background: linear-gradient(0deg, rgba(215,178,234,1) 0%, rgba(244,235,249,1) 100%);
+  color: #69278A;
+  border: 1px solid #B679D5;
+}
+
+#Ranger {
+  background: linear-gradient(0deg, rgba(226,246,209,1) 0%, rgba(238,250,227,1) 100%);
+  color: #67A833;
+  border: 1px solid #8CDC82;
+}
+
+#Revenant {
+  background: linear-gradient(0deg, rgba(235,201,194,1) 0%, rgba(246,236,233,1) 100%);
+  color: #A66356;
+  border: 1px solid #D16E5A;
+}
+
+#Thief {
+  background: linear-gradient(0deg, rgba(230,213,215,1) 0%, rgba(245,238,239,1) 100%);
+  color: #974550;
+  border: 1px solid #C08F95;
+}
+
+#Warrior {
+  background: linear-gradient(0deg, rgba(255,245,187,1) 0%, rgba(255,248,232,1) 100%);
+  color: #CAAA2A;
+  border: 1px solid #FFD166;
+}
+
+a {
+  all: unset;
+  padding-right: 10px;
+  margin: 0px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+a:hover {
+  filter: brightness(80%);
 }
