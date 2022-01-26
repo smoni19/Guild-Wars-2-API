@@ -9,16 +9,23 @@ const get_character_info = (character_name) => {
     characterName.className = "characterName";
     characterName.innerText = `${character.name}`;
 
+    // characterBirthdate = document.createElement('p');
+    // characterBirthdate.className = "characterBirthdate";
+    // characterBirthdate.innerText = `${character.created.substring(0, 10)}`;
+
     characterRace = document.createElement('a');
     characterRace.className = "characterRace";
     characterRace.href = `https://wiki.guildwars2.com/wiki/${character.race}`;
     characterRace.innerText = `${character.race}`;
 
+    // characterProf = document.createElement('a');
+    // characterProf.className = "characterProf";
+    // characterProf.href = `https://wiki.guildwars2.com/wiki/${character.profession}`;
+    // characterProf.innerText = `${character.profession}`;
+
     characterProf = document.createElement('a');
     characterProf.className = "characterProf";
     characterProf.href = `https://wiki.guildwars2.com/wiki/${character.profession}`;
-    characterProf.innerText = `${character.profession}`;
-
     characterProfPic = document.createElement('img');
     characterProfPic.className = "characterProfPic";
     //characterProfPic.src = `url('${get_profession_icon(character.profession)}')`;
@@ -72,9 +79,10 @@ const get_character_info = (character_name) => {
       characterProfPic.src = `https://render.guildwars2.com/file/${profImage}.png`
     //console.log(characterProfPic.src);
     characterBox.append(characterName)
+    //characterBox.append(characterBirthdate)
+    characterProf.append(characterProfPic)
     characterBox.append(characterProf)
     characterBox.append(characterRace)
-    characterBox.append(characterProfPic)
     document.querySelector('#character_info').appendChild(characterBox);
   })
 };

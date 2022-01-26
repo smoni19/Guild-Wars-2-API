@@ -6,40 +6,66 @@ body
 }
 
 #character_info  {
-  width: 33%;
-  min-width: 40%;
-  display: inline-block;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 800px;
 }
 
 .characterBox {
   border-radius: 10px;
-  margin-bottom: 10px;
-  box-shadow: 1px 1px 3px #00000088;
-  height: 100px;
+  margin: 10px;
+  box-shadow: 2px 2px 3px #00000066;
+  height: 55px;
+  width: 300px;
+  min-width: 100px;
+}
+
+.characterBox:hover {
+  box-shadow: 2px 2px 3px #00000044 inset;
+  cursor: pointer;
 }
 
 .characterName {
-  text-shadow: 1px 1px 1px #FFFFFFAA;
+  text-shadow: 1px 1px 0px #FFFFFFFF;
   float: left;
-  padding-left: 20px;
+  padding-left: 10px;
 }
 
 .characterRace {
   text-shadow: 1px 1px 1px #FFFFFFAA;
   float: right;
-  padding-right: 5px;
+  padding-right: 1px;
 }
 
 .characterProf {
   text-shadow: 1px 1px 1px #FFFFFFAA;
   float: right;
-  padding-right: 20px;
+  padding-right: 10px;
 }
 
 .characterProfPic {
-  position: absolute;
-  left: 48%;
+  position: relative;
+  margin-top: -10px;
+  margin-right: -5px;
   width: 3em;
+  /* background-color: #FFFFFF66;
+  border-radius: 30%; */
 }
 
 #Elementalist .characterProfPic {
