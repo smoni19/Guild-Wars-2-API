@@ -1,0 +1,14 @@
+:root {
+  --war_light: #FFD166;
+  --war_dark: #CAAA2A;
+}
+
+#Warrior .characterProfPic, #Berserker .characterEliteProf, #Spellbreaker .characterEliteProf, #Bladesworn .characterEliteProf {filter: hue-rotate(340deg);}
+#Warrior, #Berserker, #Spellbreaker, #Bladesworn {
+  background: linear-gradient(0deg, rgba(255,245,187,1) 0%, rgba(255,248,232,1) 100%);
+  color: var(--war_dark);
+  border: 1px solid var(--war_light);
+}
+#Warrior .main, #Berserker .main, #Spellbreaker .main, #Bladesworn .main {border-left: 1px solid var(--war_light); border-right: 1px solid var(--war_light);}
+#Warrior .characterName, #Berserker .characterName, #Spellbreaker .characterName, #Bladesworn .characterName {border-bottom: 1px solid var(--war_light);}
+#Warrior .footer, #Berserker .footer, #Spellbreaker .footer, #Bladesworn .footer {border-top: 1px solid var(--war_light);}

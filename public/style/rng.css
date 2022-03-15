@@ -1,0 +1,14 @@
+:root {
+  --rng_light: #8CDC82;
+  --rng_dark: #67A833;
+}
+
+#Ranger .characterProfPic, #Druid .characterEliteProf, #Soulbeast .characterEliteProf, #Untamed .characterEliteProf {filter: hue-rotate(50deg);}
+#Ranger, #Druid, #Soulbeast, #Untamed {
+  background: linear-gradient(0deg, rgba(226,246,209,1) 0%, rgba(238,250,227,1) 100%);
+  color: var(--rng_dark);
+  border: 1px solid var(--rng_light);
+}
+#Ranger .main, #Druid .main, #Soulbeast .main, #Untamed .main {border-left: 1px solid var(--rng_light); border-right: 1px solid var(--rng_light);}
+#Ranger .characterName, #Druid .characterName, #Soulbeast .characterName, #Untamed .characterName {border-bottom: 1px solid var(--rng_light);}
+#Ranger .footer, #Druid .footer, #Soulbeast .footer, #Untamed .footer {border-top: 1px solid var(--rng_light);}

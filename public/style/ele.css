@@ -1,0 +1,14 @@
+:root {
+  --ele_light: #F68A87;
+  --ele_dark: #DC423E;
+}
+
+#Elementalist .characterProfPic, #Tempest .characterEliteProf, #Weaver .characterEliteProf, #Catalyst .characterEliteProf {filter: hue-rotate(300deg);}
+#Elementalist, #Tempest, #Weaver, #Catalyst {
+  background: linear-gradient(0deg, rgba(246,210,209,1) 0%, rgba(254,238,237,1) 100%);
+  color: var(--ele_dark);
+  border: 1px solid var(--ele_light);
+}
+#Elementalist .main, #Tempest .main, #Weaver .main, #Catalyst .main {border-left: 1px solid var(--ele_light); border-right: 1px solid var(--ele_light);}
+#Elementalist .characterName, #Tempest .characterName, #Weaver .characterName, #Catalyst .characterName {border-bottom: 1px solid var(--ele_light);}
+#Elementalist .footer, #Tempest .footer, #Weaver .footer, #Catalyst .footer {border-top: 1px solid var(--ele_light);}

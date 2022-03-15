@@ -1,0 +1,14 @@
+:root {
+  --thf_light: #C08F95;
+  --thf_dark: #974550;
+}
+
+#Thief .characterProfPic, #Daredevil .characterEliteProf, #Deadeye .characterEliteProf, #Specter .characterEliteProf {filter: hue-rotate(290deg);}
+#Thief, #Daredevil, #Deadeye, #Specter {
+  background: linear-gradient(0deg, rgba(230,213,215,1) 0%, rgba(245,238,239,1) 100%);
+  color: var(--thf_dark);
+  border: 1px solid var(--thf_light);
+}
+#Thief .main, #Daredevil .main, #Deadeye .main, #Specter .main {border-left: 1px solid var(--thf_light); border-right: 1px solid var(--thf_light);}
+#Thief .characterName, #Daredevil .characterName, #Deadeye .characterName, #Specter .characterName {border-bottom: 1px solid var(--thf_light);}
+#Thief .footer, #Daredevil .footer, #Deadeye .footer, #Specter .footer {border-top: 1px solid var(--thf_light);}

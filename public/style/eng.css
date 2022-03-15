@@ -1,0 +1,13 @@
+:root {
+  --eng_light: #87581D;
+  --eng_dark: #87581D;
+}
+
+#Engineer, #Scrapper, #Holosmith, #Mechanist {
+  background: linear-gradient(0deg, rgba(232,200,159,1) 0%, rgba(248,235,218,1) 100%);
+  color: var(--eng_dark);
+  border: 1px solid var(--eng_light);
+}
+#Engineer .main, #Scrapper .main, #Holosmith .main, #Mechanist .main {border-left: 1px solid var(--eng_light); border-right: 1px solid var(--eng_light);}
+#Engineer .characterName, #Scrapper .characterName, #Holosmith .characterName, #Mechanist .characterName {border-bottom: 1px solid var(--eng_light);}
+#Engineer .footer, #Scrapper .footer, #Holosmith .footer, #Mechanist .footer {border-top: 1px solid var(--eng_light);}

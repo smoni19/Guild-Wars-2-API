@@ -1,0 +1,14 @@
+:root {
+  --mes_light: #B679D5;
+  --mes_dark: #69278A;
+}
+
+#Mesmer .characterProfPic, #Chronomancer .characterEliteProf, #Mirage .characterEliteProf, #Virtuoso .characterEliteProf {filter: brightness(90%) hue-rotate(230deg);}
+#Mesmer, #Chronomancer, #Mirage, #Virtuoso {
+  background: linear-gradient(0deg, rgba(215,178,234,1) 0%, rgba(244,235,249,1) 100%);
+  color: var(--mes_dark);
+  border: 1px solid var(--mes_light);
+}
+#Mesmer .main, #Chronomancer .main, #Mirage .main, #Virtuoso .main {border-left: 1px solid var(--mes_light); border-right: 1px solid var(--mes_light);}
+#Mesmer .characterName, #Chronomancer .characterName, #Mirage .characterName, #Virtuoso .characterName {border-bottom: 1px solid var(--mes_light);}
+#Mesmer .footer, #Chronomancer .footer, #Mirage .footer, #Virtuoso .footer {border-top: 1px solid var(--mes_light);}

@@ -1,0 +1,113 @@
+@import "ele.css";
+@import "eng.css";
+@import "gua.css";
+@import "nec.css";
+@import "mes.css";
+@import "rng.css";
+@import "rev.css";
+@import "thf.css";
+@import "war.css";
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&family=Ubuntu:wght@300;500&display=swap');
+
+.content {
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 800px;
+}
+
+.characterBox {
+  display: flex;  
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 0px #00000066;
+}
+
+.characterBox:hover {
+  cursor: pointer;
+}
+
+.characterBox > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.characterName {
+  border-radius: 5px 5px 0 0;
+  text-shadow: 1px 1px 0px #FFFFFFFF;
+  border-bottom: 1px solid #33333366;
+}
+
+.characterAge, .characterBirthdate, .characterRace, .characterProf, .characterEliteProf, .characterPlaytime {
+  text-shadow: 1px 1px 0px #FFFFFFFF;
+  font-size: 12px;
+}
+
+
+
+.footer {
+  border-radius: 0 0 5px 5px;
+  border-top: 1px solid #33333366;
+}
+
+.main {
+  border-left: 1px solid #33333366;
+  border-right: 1px solid #33333366;
+  width: 33%;
+}
+
+.aside_1 {
+}
+
+.aside_2 {
+  width: 33%;
+}
+
+@media all and (min-width: 600px) {
+  .aside { flex: 1 0 0; }
+}
+
+@media all and (min-width: 800px) {
+  .main    { flex: 3 0px; }
+  .aside_1 { order: 1; } 
+  .main    { order: 2; }
+  .aside_2 { order: 3; }
+  .footer  { order: 4; }
+}
+
+body {
+  background-color: #DDDDDD;
+  font-family: 'Rubik', sans-serif;
+  text-align: center;
+  padding: 2em;
+}
+
+a {
+  all: unset;
+  padding-right: 10px;
+  margin: 0px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+img {
+  width: 64px;
+}

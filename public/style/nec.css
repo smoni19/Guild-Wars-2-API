@@ -1,0 +1,14 @@
+:root {
+  --nec_light: #52A76F;
+  --nec_dark: #2C9D5D;
+}
+
+#Necromancer .characterProfPic, #Reaper .characterEliteProf, #Scourge .characterEliteProf, #Harbinger .characterEliteProf {filter: hue-rotate(100deg);}
+#Necromancer, #Reaper, #Scourge, #Harbinger  {
+  background: linear-gradient(0deg, rgba(191,230,208,1) 0%, rgba(229,242,234,1) 100%);
+  color: var(--nec_dark);
+  border: 1px solid var(--nec_light);
+}
+#Necromancer .main, #Reaper .main, #Scourge .main, #Harbinger .main {border-left: 1px solid var(--nec_light); border-right: 1px solid var(--nec_light);}
+#Necromancer .characterName, #Reaper .characterName, #Scourge .characterName, #Harbinger .characterName {border-bottom: 1px solid var(--nec_light);}
+#Necromancer .footer, #Reaper .footer, #Scourge .footer, #Harbinger .footer {border-top: 1px solid var(--nec_light);}

@@ -1,0 +1,14 @@
+:root {
+  --gua_light: #72C1D9;
+  --gua_dark: #186885;
+}
+
+#Guardian .characterProfPic, #Dragonhunter .characterEliteProf, #Firebrand .characterEliteProf, #Willbender .characterEliteProf {filter: hue-rotate(160deg);}
+#Guardian, #Dragonhunter, #Firebrand, #Willbender  {
+  background: linear-gradient(0deg, rgba(207,238,253,1) 0%, rgba(234,246,249,1) 100%);
+  color: var(--gua_dark);
+  border: 1px solid var(--gua_light);
+}
+#Guardian .main, #Dragonhunter .main, #Firebrand .main, #Willbender .main {border-left: 1px solid var(--gua_light); border-right: 1px solid var(--gua_light);}
+#Guardian .characterName, #Dragonhunter .characterName, #Firebrand .characterName, #Willbender .characterName {border-bottom: 1px solid var(--gua_light);}
+#Guardian .footer, #Dragonhunter .footer, #Firebrand .footer, #Willbender .footer {border-top: 1px solid var(--gua_light);}
