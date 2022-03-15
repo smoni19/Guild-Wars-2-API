@@ -1,4 +1,4 @@
-# Guild-Wars-2-JSON-Fun
+# Guild Wars 2 API interaction
 
 Playing around with GW2 API <br/><br/>
 to run:  
