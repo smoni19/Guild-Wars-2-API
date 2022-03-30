@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="style/build_style.css">
+    <script src="get_character_build.js".js type="text/javascript" defer></script>
+    <script src="access_token.js".js type="text/javascript" defer></script>
+    <title>
+      GW2 build
+    </title>
+  </head>
+  <body onload="get_character_names()">
+   <div>
+      <a href="dyes.html">dyes</a> - 
+      <a href="index.html">index</a> - 
+      <a href="all_characters.html">all characters</a>
+    </div>
+    <br>
+
+    <div id="content">
+      <div id="input">
+        <!-- <input type="text" id="name_input" placeholder="Enter character name" value="Bheironn">
+        <button onclick="get_specialisations()">Get build</button> -->
+        <!-- <ul id="character_list" size="1">
+        </ul> -->
+        <select id="character_select" size="1" onclick="get_specialisations();">
+          <option disabled selected>Choose a character</option>
+        </select>
+      </div>
+      <div id="build">
+      </div>
+    </div>
+  </body>
+</html>

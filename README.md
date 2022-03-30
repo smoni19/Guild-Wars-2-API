@@ -1,6 +1,9 @@
 # Guild Wars 2 API interaction
+Exploring the API of [Guild Wars 2](https://www.guildwars2.com/en-gb/).  
+Inspired by such sites as [GW2 Efficiency](https://gw2efficiency.com/) and [MetaBattle](https://metabattle.com/wiki/MetaBattle_Wiki).  
+Endpoints documented on the [official GW2 Wiki](https://wiki.guildwars2.com/wiki/API:Main).
 
-Playing around with GW2 API <br/><br/>
-to run:  
-- terminal 1: 'npm run build'
-- terminal 2: './node_modules/.bin/http-server -c-1'
+## To use:
+- In one terminal run: ```npm run build```
+- In a second terminal run: ```./node_modules/.bin/http-server -c-1```
+- Navigate to ```localhost:9292```
