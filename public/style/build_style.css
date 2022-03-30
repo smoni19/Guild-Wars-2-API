@@ -53,8 +53,8 @@
 
 body {
   background-color: #DDDDDD;
-  background: url('https://wiki.guildwars2.com/images/9/93/Renegade_concept_art_original.jpg') no-repeat center center fixed;
-  background: url('https://wiki.guildwars2.com/images/4/47/Elite_specializations_%28EoD%29.jpg') no-repeat center center fixed;
+  /* background: url('https://wiki.guildwars2.com/images/9/93/Renegade_concept_art_original.jpg') no-repeat center center fixed;
+  background: url('https://wiki.guildwars2.com/images/4/47/Elite_specializations_%28EoD%29.jpg') no-repeat center center fixed; */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -98,12 +98,21 @@ a:hover {
   z-index: 1;
 }
 
+.elite {
+  border: 1px solid #FFD700;
+}
+
 .specialisation_name {
   position: absolute;
   left: 0px;
   margin: 2px 5px;
   color: white;
   text-shadow: 0px 0px 1px #000000, 0px 0px 2px #000000, 0px 0px 3px #000000, 0px 0px 4px #000000, 0px 0px 5px #000000;
+  text-decoration: none;
+}
+
+.specialisation_name:hover {
+  text-decoration: none;
 }
 
 #input {
@@ -191,7 +200,7 @@ option:hover {
   cursor: pointer;
 }
 
-.loader {
+#loader {
   margin: 0 auto;
   border: 5px solid #F3F3F3;
   border-radius: 50%;
