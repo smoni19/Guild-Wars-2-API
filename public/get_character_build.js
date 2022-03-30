@@ -138,7 +138,8 @@ const get_trait_info = (trait) => {
 };
 
 const get_character_names = () => {
-  fetch(`https://api.guildwars2.com/v2/characters?access_token=${access_token}`).then((response) => {
+  const api_key = getCookie('api_key');
+  fetch(`https://api.guildwars2.com/v2/characters?access_token=${api_key}`).then((response) => {
     return response.json();
   })
   .then((character_list) => {
@@ -157,13 +158,14 @@ const get_specialisations = () => {
   const character = character_select.value;
   const build = document.getElementById('build');
   build.innerHTML = '';
-  //build.innerHTML = `Loading ${character}'s build...`;
   const loader = document.createElement('div');
   loader.id = "loader"
   build.append(loader)
 
   //const name_uppercase = character.replace(/(^\w{1})|(\s+\w{1})/g, letter => letter.toUpperCase());
-  fetch(`https://api.guildwars2.com/v2/characters/${character}?access_token=${access_token}`)
+  const api_key = getCookie('api_key');
+
+  fetch(`https://api.guildwars2.com/v2/characters/${character}?access_token=${api_key}`)
   .then((response) => {
     return response.json();
     })

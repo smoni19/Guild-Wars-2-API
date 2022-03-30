@@ -2,12 +2,12 @@
   <head>
     <link rel="stylesheet" href="style/build_style.css">
     <script src="get_character_build.js".js type="text/javascript" defer></script>
-    <script src="access_token.js".js type="text/javascript" defer></script>
+    <script src="save_api_key.js".js type="text/javascript" defer></script>
     <title>
       GW2 build
     </title>
   </head>
-  <body onload="get_character_names()">
+  <body onload="check_cookie();">
    <div>
       <a href="dyes.html">dyes</a> - 
       <a href="index.html">index</a> - 
@@ -17,10 +17,9 @@
 
     <div id="content">
       <div id="input">
-        <!-- <input type="text" id="name_input" placeholder="Enter character name" value="Bheironn">
-        <button onclick="get_specialisations()">Get build</button> -->
-        <!-- <ul id="character_list" size="1">
-        </ul> -->
+        <input type="text" id="api_key_input_field" placeholder="Enter API key">
+        <button id="api_key_input_button" onclick="save_api_key()">Save</button>
+        <br>
         <select id="character_select" size="1" onclick="get_specialisations();">
           <option disabled selected>Choose a character</option>
         </select>

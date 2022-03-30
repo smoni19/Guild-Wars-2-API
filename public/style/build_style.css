@@ -119,7 +119,10 @@ a:hover {
   position: fixed;
   top: 10px;
   left: 10px;
+  display: inline-block;
 }
+
+
 
 .Minor, .Major {
   width: 35px;
@@ -188,6 +191,8 @@ a:hover {
 
 #character_select {
   overflow-y: auto;
+  margin-top: 5px;
+  visibility: hidden;
 }
 
 #character_select:focus {
